@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Weather App with Tailwind CSS
 
-Currently, two official plugins are available:
+This is a simple weather application built using React and styled with Tailwind CSS. It allows users to check the current weather conditions of any location.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View current weather conditions for any location
+- Responsive design for various screen sizes
+- Easy-to-use interface
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React: A JavaScript library for building user interfaces
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs
+- OpenWeatherMap API: Used to fetch weather data for locations
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Usage
+
+1. **Clone the repository:**
+
+
+```
+git clone https://github.com/jintu-das/hootboard-assignment.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+2. **Navigate to the project directory:**
+```
+   cd hootboard-assignment
+```
+
+
+3. ***Install dependencies:***
+```
+npm install
+```
+Obtain an API key from OpenWeatherMap and replace 'VITE_WEATHER_API' with your actual API key in the .env file.
+
+4. ***Start the development server:***
+
+```
+npm run dev
+```
+
+Open your browser and navigate to http://localhost:5173/ to view the app.
+
+5. ***Contributing***
+
+Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request.
+
+
+Acknowledgments
+This project was created as an assigment  for [Hootboard](https://www.hootboard.com/).
+Weather data is provided by the [OpenWeatherMap API](https://openweathermap.org/).
